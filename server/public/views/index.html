@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Handles</title>
+
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <script src="/vendor/angular/angular.min.js"></script>
+    <!--<script src="/vendor/angular/angular.min.js.map"></script>-->
+    <script src="/assets/scripts/app.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Snafu Inc. Twitter Handles</h1>
+    </div>
+
+    <div class="row">
+        <div ng-controller="MainController">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <ul>
+                    <li ng-repeat="handle in handleList track by $index"><a href="https:/twitter.com/{{handle}}" target="_blank">@{{handle}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+</body>
+</html>
