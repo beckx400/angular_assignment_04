@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+
+body{
+    font-family: 'Chewy', cursive;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color: green;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+img{
+    width:60px;
+    height: 60px;
+    position: absolute;
+    left: 610px;
+    top: 33px;
+}
+a:hover{
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-size: 35px;
+}
+.header{
+    margin-bottom: 10px;
+    background-color: deeppink;
+    color: white;
+    position: relative;
+}
+.jumbotron {
+    text-align: center;
+}
+.data-container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: yellow;
+    padding-top: 10px;
+    text-align: center;
+}
+
